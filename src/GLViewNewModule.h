@@ -4,23 +4,12 @@
 #include "NetMessengerClient.h"
 #include "NetMsgAntGsSetback.h"
 #include "CloneTrooper.h"
+#include "WOFTGLString.h"
 //#include <irrKlang.h>
 
 namespace Aftr
 {
    class Camera;
-
-/**
-   \class GLViewNewModule
-   \author Scott Nykl 
-   \brief A child of an abstract GLView. This class is the top-most manager of the module.
-
-   Read \see GLView for important constructor and init information.
-
-   \see GLView
-
-    \{
-*/
 
 class GLViewNewModule : public GLView
 {
@@ -38,11 +27,14 @@ public:
    virtual void onKeyUp( const SDL_KeyboardEvent& key );
 
    CloneTrooper* clone;
+   WOFTGLString* worldText;
 
 protected:
    GLViewNewModule( const std::vector< std::string >& args );
    virtual void onCreate();
    NetMessengerClient* client;
+   WOFTGLString* getInitialWorldText();
+   std::string startingText;
 };
 
 /** \} */

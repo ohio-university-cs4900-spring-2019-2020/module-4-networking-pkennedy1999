@@ -15,6 +15,9 @@ public:
    void setPosition(float x, float y, float z) {
      clone -> setPosition(Vector(x, y, z));
    };
+   void setPosition(Vector v) {
+     clone -> setPosition(v);
+   };
    Vector getPosition() {
      return clone -> getPosition();
    };

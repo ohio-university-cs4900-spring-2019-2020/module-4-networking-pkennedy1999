@@ -32,13 +32,14 @@ bool NetMsgAntGsSetback::toStream( NetMessengerStreamBuffer& os ) const
 
 bool NetMsgAntGsSetback::fromStream( NetMessengerStreamBuffer& is )
 {
+   std::cout << "Message Arrived" << std::endl;
    is >> this->position.x >> this->position.y >> this->position.z;
    return true;
 }
 
 void NetMsgAntGsSetback::onMessageArrived()
 {
-   ((GLViewNewModule*)ManagerGLView::getGLView())->clone->setPosition(this->position.x, this->position.y, this -> position.z);
+   ((GLViewNewModule*)ManagerGLView::getGLView())->clone->setPosition(this -> position.x, this -> position.y, this -> position.z);
 
    std::cout << this->toString() << std::endl;
 }

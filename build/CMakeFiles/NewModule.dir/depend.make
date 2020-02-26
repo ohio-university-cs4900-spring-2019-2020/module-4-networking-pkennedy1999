@@ -2614,6 +2614,7 @@ CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/af
 CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/aftr/WO.h
 CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/aftr/WOBoundingShell.h
 CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/aftr/WOCar1970sBeater.h
+CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/aftr/WOFTGLString.h
 CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/aftr/WOGUI.h
 CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/aftr/WOGUIRoot.h
 CMakeFiles/NewModule.dir/GLViewNewModule.cpp.o: /home/pkennedy/CS4900/include/aftr/WOHuman.h
@@ -4506,6 +4507,7 @@ CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include
 CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include/aftr/VectorImpl.h
 CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include/aftr/VertexListEntry.h
 CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include/aftr/WO.h
+CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include/aftr/WOFTGLString.h
 CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include/aftr/WOGUI.h
 CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include/aftr/WOGUIRoot.h
 CMakeFiles/NewModule.dir/NetMsgAntGsSetback.cpp.o: /home/pkennedy/CS4900/include/aftr/WOMacroMethods.h
@@ -6347,6 +6349,7 @@ CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include
 CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include/aftr/VectorImpl.h
 CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include/aftr/VertexListEntry.h
 CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include/aftr/WO.h
+CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include/aftr/WOFTGLString.h
 CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include/aftr/WOMacroMethods.h
 CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include/aftr/WOWayPointAbstract.h
 CMakeFiles/NewModule.dir/NewModuleWayPoints.cpp.o: /home/pkennedy/CS4900/include/aftr/WOWayPointSpherical.h
@@ -8189,6 +8192,7 @@ CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/aftr/VectorFw
 CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/aftr/VectorImpl.h
 CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/aftr/VertexListEntry.h
 CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/aftr/WO.h
+CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/aftr/WOFTGLString.h
 CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/aftr/WOMacroMethods.h
 CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/aftr/WorldObjectChildContainer.h
 CMakeFiles/NewModule.dir/main.cpp.o: /home/pkennedy/CS4900/include/glew-2.1.0/include/GL/glew.h

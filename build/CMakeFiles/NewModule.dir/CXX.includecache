@@ -22444,6 +22444,12 @@ AftrConfig.h
 WOVehicleFourWheeled.h
 /home/pkennedy/CS4900/include/aftr/WOVehicleFourWheeled.h
 
+/home/pkennedy/CS4900/include/aftr/WOFTGLString.h
+WO.h
+/home/pkennedy/CS4900/include/aftr/WO.h
+string
+-
+
 /home/pkennedy/CS4900/include/aftr/WOGUI.h
 WO.h
 /home/pkennedy/CS4900/include/aftr/WO.h
@@ -22851,6 +22857,10 @@ AftrGLRendererBase.h
 /home/pkennedy/CS4900/modules/NewModule/src/AftrGLRendererBase.h
 NetMsgAntGsSetback.h
 /home/pkennedy/CS4900/modules/NewModule/src/NetMsgAntGsSetback.h
+WOFTGLString.h
+/home/pkennedy/CS4900/modules/NewModule/src/WOFTGLString.h
+Vector.h
+/home/pkennedy/CS4900/modules/NewModule/src/Vector.h
 NewModuleWayPoints.h
 /home/pkennedy/CS4900/modules/NewModule/src/NewModuleWayPoints.h
 
@@ -22863,6 +22873,8 @@ NetMsgAntGsSetback.h
 /home/pkennedy/CS4900/modules/NewModule/src/NetMsgAntGsSetback.h
 CloneTrooper.h
 /home/pkennedy/CS4900/modules/NewModule/src/CloneTrooper.h
+WOFTGLString.h
+/home/pkennedy/CS4900/modules/NewModule/src/WOFTGLString.h
 
 /home/pkennedy/CS4900/modules/NewModule/src/NetMsgAntGsSetback.h
 NetMsg.h

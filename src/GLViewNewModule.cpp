@@ -32,6 +32,8 @@
 #include "WONVDynSphere.h"
 #include "AftrGLRendererBase.h"
 #include "NetMsgAntGsSetback.h"
+#include "WOFTGLString.h"
+#include "Vector.h"
 
 //If we want to use way points, we need to include this.
 #include "NewModuleWayPoints.h"
@@ -94,9 +96,16 @@ void GLViewNewModule::onCreate()
    }
    this->setActorChaseType( STANDARDEZNAV ); //Default is STANDARDEZNAV mode
    //this->setNumPhysicsStepsPerRender( 0 ); //pause physics engine on start up; will remain paused till set to 1
+
+   client = NetMessengerClient::New("132.235.1.39", "12683");
    
 
-   //DO I NEED TO PUT ANYTHING HERE FOR NETWORKING? AND WHERE DO I PUT THE IP ADDRESSES?
+   //this -> startingText = "Hello World";
+   //this -> worldText = this -> getInitialWorldText();
+   //worldLst -> push_back(this -> worldText);
+
+   this-> clone = CloneTrooper::New();
+   worldLst->push_back(this->clone->getClone());
 }
 
 
@@ -148,34 +157,10 @@ void GLViewNewModule::onKeyDown( const SDL_KeyboardEvent& key )
 
    if( key.keysym.sym == SDLK_1 )
    {
-      /*
-      WO* wo = WO::New(ManagerEnvironmentConfiguration::getSMM() + "models/model.dae");
-      wo->setPosition(Vector(x, 50, 5));
-      WO* wo1 = WO::New(ManagerEnvironmentConfiguration::getSMM() + "models/model.dae");
-      wo1->setPosition(Vector(x, 55, 5));
-      WO* wo2 = WO::New(ManagerEnvironmentConfiguration::getSMM() + "models/model.dae");
-      wo2->setPosition(Vector(x, 60, 5));
-      WO* wo3 = WO::New(ManagerEnvironmentConfiguration::getSMM() + "models/model.dae");
-      wo3->setPosition(Vector(x, 65, 5));
-      WO* wo4 = WO::New(ManagerEnvironmentConfiguration::getSMM() + "models/model.dae");
-      wo4->setPosition(Vector(x, 70, 5));
-      WO* wo5 = WO::New(ManagerEnvironmentConfiguration::getSMM() + "models/model.dae");
-      wo5->setPosition(Vector(x, 75, 5));
-      x += 5.0f;
-      worldLst->push_back(wo);
-      worldLst->push_back(wo1);
-      worldLst->push_back(wo2);
-      worldLst->push_back(wo3);
-      worldLst->push_back(wo4);
-      worldLst->push_back(wo5);
-      */
+      this -> clone -> setPosition(this -> clone -> getPosition() + Vector(1, 1, 1));
 
-      this-> clone = CloneTrooper::New();
-      worldLst->push_back(this->clone->getClone());
-
-      NetMessengerClient::New("132.235.1.49", "12683")->isTCPSocketOpen();
-      if(this -> client -> isTCPSocketOpen()) {
-	this-> client->sendNetMsgSynchronousTCP(NetMsgAntGsSetback(this->clone->getPosition()));
+      if(client->isTCPSocketOpen()) {
+	this -> client->sendNetMsgSynchronousTCP(NetMsgAntGsSetback(this->clone->getPosition()));
       }
    }
 }
